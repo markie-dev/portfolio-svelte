@@ -15,8 +15,9 @@
             <span class="text-red-800 dark:text-red-600">University of North Texas</span> (Spring 2025)
         </h2>
     </div>
-
     <IconGroup />
-    <Projects />
+    <div class="mt-12 sm:mt-16">
+        <Projects />
+    </div>
     <Footer />
 </div>

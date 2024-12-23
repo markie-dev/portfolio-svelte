@@ -18,7 +18,7 @@
 <div class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
     <nav class="backdrop-blur-md bg-white/60 dark:bg-background/60">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center py-4">
+            <div class="flex items-center py-3">
                 <a 
                     href="/" 
                     on:click={(e) => {
