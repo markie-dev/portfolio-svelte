@@ -8,7 +8,10 @@ export default {
     extend: {
       colors: {
         background: '#000000',
-      }
+      },
+      fontFamily: {
+        sans: ['Geist', 'sans-serif'],
+      },
     }
   },
 

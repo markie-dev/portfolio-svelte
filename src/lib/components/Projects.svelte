@@ -12,7 +12,7 @@
     }
 
     :global(.dark) .tech-tag {
-        background: rgba(30, 30, 30, 0.5);
+        background: rgb(39 39 42);
     }
 
     .tech-tag::before {
@@ -35,16 +35,6 @@
         opacity: 0;
         transition: opacity 0.3s ease;
         z-index: -1;
-    }
-
-    :global(.dark) .tech-tag::before {
-        background: linear-gradient(
-            -45deg,
-            rgba(255, 158, 205, 0.07),
-            rgba(126, 178, 255, 0.07),
-            rgba(255, 158, 205, 0.12),
-            rgba(126, 178, 255, 0.12)
-        );
     }
 
     .tech-tag:hover::before {
@@ -99,24 +89,12 @@
                 
                 <div class="py-6 px-4 sm:px-6">
                     <div class="mb-2">
-                        <div class="md:flex md:items-center md:gap-4">
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
-                            
-                            <div class="hidden md:flex flex-wrap gap-2">
-                                {#each project.technologies as tech}
-                                    <span 
-                                        class="tech-tag px-3 py-1 rounded-full text-sm text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-zinc-700"
-                                    >
-                                        {tech}
-                                    </span>
-                                {/each}
-                            </div>
-                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
                     </div>
 
                     <p class="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
                     
-                    <div class="md:hidden flex flex-wrap gap-2 mb-4">
+                    <div class="flex flex-wrap gap-2 mb-4">
                         {#each project.technologies as tech}
                             <span 
                                 class="tech-tag px-3 py-1 rounded-full text-sm text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-zinc-700"
